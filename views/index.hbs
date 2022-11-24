@@ -6,15 +6,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
         <link rel="stylesheet" href="/css/styles.css">
-        <title>Document</title>
-        <script src="/js/index.js">
+        <title>Weather</title>
+        <link rel="icon" href="/images/weather.svg">
+
 
         </script>
     </head>
 
     <body>
-        <h2>{{title}}</h2>
-        <p>{{name}}</p>
+        <div class="main-content">
+            {{>header}}
+            <p>Use this site to get weather</p>
+            <form>
+                <input placeholder="Location">
+                <button>Search</button>
+            </form>
+            <p id="messageOne"></p>
+            <p id="messageTwo"></p>
+        </div>
+
+
+        <footer>
+            {{>footer}}
+        </footer>
+        <script src="/js/index.js"></script>
     </body>
+
 
 </html>
