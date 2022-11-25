@@ -20,7 +20,7 @@ const formValue = document.querySelector("form");
 const searchTerm = document.querySelector("input");
 const messageOne = document.querySelector("#messageOne");
 const messageTwo = document.querySelector("#messageTwo");
-const url = "http://localhost:3000/weather?address=";
+const url = "/weather?address=";
 
 messageOne.textContent = " ";
 
