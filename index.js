@@ -15,7 +15,7 @@ app.set("view engine", "hbs");
 app.use(express.static(publicDirectory));
 hbs.registerPartials(partialPath);
 
-app.get("", (req, res) => {
+app.get("/", (req, res) => {
   res.render("index", {
     title: "Weather",
     name: "Jethalal Gada ",
