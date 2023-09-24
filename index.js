@@ -2,14 +2,14 @@ const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
 
-const geocode = require("./utils/geocode");
-const forecast = require("./utils/forecast");
+const geocode = require("./src/utils/geocode");
+const forecast = require("./src/utils/forecast");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
-const publicDirectory = path.join(__dirname, "../public");
-const partialPath = path.join(__dirname, "../views/partials");
+const publicDirectory = path.join(__dirname, "./public");
+const partialPath = path.join(__dirname, "./views/partials");
 
 app.set("view engine", "hbs");
 app.use(express.static(publicDirectory));
